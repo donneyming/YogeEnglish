@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chart</title>
+    <link rel="stylesheet" href="chart.css">
+    <script type="text/javascript" src="Chart.min.js"></script>
+</head>
+
+<body>
+
+<p class="midnight">你现在的完成进度：</p>
+
+<div>
+    <canvas id="canvas"></canvas>
+</div>
+
+
+<div id="tip">
+    <span class="intro_block"> </span> 已完成
+    <span class="intro_block"> </span> 进行中
+</div>
+
+<script type="text/javascript">
+
+    var tododata = window.TODO.getTodo();
+    var untodo = window.TODO.getUntodo();
+
+    var pieData = [
+        {
+            value: tododata ,
+            color: "#F0793F"
+        },
+        {
+            value: untodo ,
+            color: "#2DBAA6"
+        }
+    ];
+
+    var myPie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData);
+
+</script>
+</body>
+</html>

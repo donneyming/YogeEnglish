@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adjective</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" >
+    <link rel="stylesheet" href="jquery.mobile.structure-1.4.2.min.css" >
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.mobile-1.4.2.min.js" ></script>
+    <style>
+    .custom-corners .ui-bar {
+      -webkit-border-top-left-radius: inherit;
+      border-top-left-radius: inherit;
+      -webkit-border-top-right-radius: inherit;
+      border-top-right-radius: inherit;
+    }
+    .custom-corners .ui-body {
+      border-top-width: 0;
+      -webkit-border-bottom-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+      -webkit-border-bottom-right-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
+	
+	#test{
+		outline:1px #333333 dashed ;
+	}
+	#test2{
+		outline:1px #666666 dashed ;
+	}
+  </style>
+</head>
+<body>
+    <div data-role="page">
+        
+        <div data-role="panel" id="leftpanel" data-theme="a" data-display="overlay" data-position="left"> 
+             <ui data-icon="false" data-divider-theme="a" data-theme="a" data-inset="false" data-role="listview">
+                <li class="ui-li-divider ui-bar-a ui-first-child" data-role="list-divider" role="heading">当前目录</li>
+                <li><a href="#begin" data-ajax="false">一、形容词</a></li>
+                <li><a href="#begin_1_1" data-ajax="false">1.1 形容词及其用法</a></li>
+                <li><a href="#begin_1_2" data-ajax="false">1.2 以-ly结尾的形容词 </a></li>
+                <li><a href="#begin_1_3" data-ajax="false">1.3 用形容词表示类别和整体</a></li>
+                <li><a href="#begin_1_4" data-ajax="false">1.4 多个形容词修饰名词的顺序 </a></li>
+            </ui>
+        </div><!-- /panel -->
+        
+        
+        <div data-role="header" data-position="fixed" >
+            <a id="header_change_section" href="#leftpanel">目录</a>
+            <h2>Adjective 形容词 </h2>
+            <a id="header_show_menu">PinBox</a>
+        </div>
+        <div data-role="content">
+            <div id="all" >
+                <h4 id=“begin”>一、形容词</h4>
+                <p>
+                	容词修饰名词，说明事物或人的性质或特征。通常，可将形容词分成性质形容词和叙述形容词两类，其位置不一定都放在名词前面。
+                </p>
+                <h4 id="begin_1_1">1.1 形容词及其用法</h4> 
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <p>直接说明事物的性质或特征的形容词是性质形容词，它有级的变化，可以用程度副词修饰，在句中可作定语、表语和补语。例如：hot。
+
+2）叙述形容词只能作表语，所以又称为表语形容词。这类形容词没有级的变化，也不可用程度副词修饰。大多数以a开头的形容词都属于这一类。例如：afraid 害怕的。
+</p>
+                      </div>
+                </div>
+            
+                <p></p>
+               <h4 id="begin_1_2">1.2 以-ly结尾的形容词</h4> 
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                       	<ul>
+                        	<li>大部分形容词加-ly可构成副词。但 friendly，deadly，lovely，lonely，likely，lively，ugly，brotherly，仍为形容词。
+
+　    改错： （错） She sang lovely.<br/>
+（对） Her singing was lovely.
+
+
+</li>
+                            <li>有些以-ly 结尾既为形容词，也为副词，如daily，weekly，monthly，yearly，early等。例如：
+
+　　 The Times is a weekly paper. 《时代周刊》为周刊。
+
+</li>
+                        </ul>
+                      </div>
+                </div>
+            
+                <p></p>
+                
+                <h4 id="begin_1_3">1.3 用形容词表示类别和整体 </h4> 
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <p>某些形容词加上定冠词可以泛指一类人，与谓语动词的复数连接，如the dead，the living，the rich，the poor，the blind，the hungry等。例如：
+
+　　  The poor are losing hope. 穷人行将失去希望。
+
+2） 有关国家和民族的形容词加上定冠词指这个民族的整体，与动词的复数连用，如the British，the English，the French，the Chinese等。例如：
+
+　　  The English have wonderful sense of humor. 英国人颇有幽默感。
+
+。
+</p>
+                      </div>
+                </div>
+            
+                <p></p>
+                
+                <h4 id="begin_1_4">1.4 多个形容词修饰名词的顺序 </h4> 
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <h3>多个形容词修饰名词时，其顺序为：限定词--数词--描绘词--（大小，长短，形状，新旧，颜色）--出处--材料性质--类别--名词。例如：
+
+　　 a small round table/ a tall gray building/ a dirty old brown shirt/ a famous German medical school/ an expensive Japanese sports car 
+
+
+</h3>
+					  <div class="ui-body ui-body-a">
+                      	<ul>典型例题:
+                        	<li>Tony is going camping with ___ boys.　<br/>
+
+　      A.　little two other　B. two little other　<br/>　C.　two other little　 D.　little other two<br/>
+
+　   答案：C。由"限定词--数词--描绘词--（大小，长短，形状，新旧，颜色） --性质--名词"的顺序可知数词，描绘词，性质依次顺序，只有C符合答案。
+
+</li>
+                            <li>One day they crossed the ____bridge behind the palace.<br/>
+
+　     A. old Chinese stone　B. Chinese old stone<br/>　C. old stone Chinese　D. Chinese stone old<br/>
+
+　   答案A. 几个形容词修饰一个名词，他们的排列顺序是：年龄，形状，大小+颜色+来源+质地+用途+国家+名词。
+
+</li>
+                            <li> ---- How was your recent visit to Qingdao?<br/>
+
+　      ---- It was great. We visited some friends，and spent the ___days at the seaside.<br/>
+
+　    A. few last sunny　 B. last few sunny<br/>　 C. last sunny few　 D. few sunny last<br/>
+
+答案：B。本题考查多个形容词的排序问题。一般与被修饰形容词关系密切的形容词靠近名词；如果几个形容词的重要性差不多，音节少的形容词在前，音节多的方在后，在不能确定时，可参照：限定词+数量词（序数词在前，基数词在后）+性状形容词+大小、长短、高低等形体+新旧+颜色+国籍+材料+名词，如those + three + beautiful + large + square +old + brown + wood + table。
+
+</li>
+                        </ul>
+                      </div>
+                      </div>
+                </div>
+            
+                <p></p>
+            </div> <!--all end-->
+        </div><!--content end-->
+    </div>
+</body>
+</html>

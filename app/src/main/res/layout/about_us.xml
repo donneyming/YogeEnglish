@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/theme_gray"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/theme_red">
+        
+	    <ImageView
+	        android:layout_centerInParent="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="5dp"
+	        android:layout_width="30px"
+	        android:layout_height="30px"
+	        android:id="@+id/sliding_menu_actionbar_icon"
+	        android:layout_marginRight="-32dp"
+	        android:src="@mipmap/list_icon"/>
+	    
+	    <TextView
+	        android:id="@+id/setting_change_page_title"
+	        android:layout_centerInParent="true"
+	        android:layout_toRightOf="@id/sliding_menu_actionbar_icon"
+	        android:background="@color/theme_red"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:typeface="monospace"
+	        android:textColor="@color/theme_white"
+	        android:padding="6dp"
+	        android:textSize="18sp"
+	        android:text="关于我们"/>
+	    
+	    <ImageView
+		        android:layout_centerInParent="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_margin="8dp"
+		        android:layout_width="32px"
+		        android:layout_height="32px"
+		        android:id="@+id/about_us_back"
+		        android:src="@mipmap/back"/>
+	</RelativeLayout>
+	
+    <RelativeLayout 
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+
+       <LinearLayout
+            android:layout_centerHorizontal="true"            
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            
+        	<ImageView 
+        	    android:layout_gravity="center"
+	            android:layout_marginTop="20dp"
+	            android:layout_centerHorizontal="true"
+	            android:layout_height="120px"
+	            android:layout_width="120px"
+	            android:src="@mipmap/new_logo_big"/>
+        	
+        	
+        	 <TextView
+        	    android:padding="10dp"
+        	    android:layout_marginTop="5dp"
+	            android:text="面向学生的英语学习工具，同时具有任务\n管理机制，激发学霸的潜质。"
+	            android:textColor="@color/flat_gray"
+	            android:textSize="12dp"
+	            android:gravity="center"
+	            android:typeface="monospace"
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"/>
+        	 
+        	 <TextView
+        	    android:layout_marginTop="10dp"
+        	    android:padding="2dp"
+	            android:text="开发工作："
+	            android:textColor="@color/flat_gray"
+	            android:textSize="12dp"
+	            android:gravity="center"
+	            android:typeface="serif"
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"/>
+        	 
+        	<TextView
+	            android:text=" Loppis With Jaky " 
+	            android:textColor="@color/flat_gray"
+	            android:textSize="12dp"
+	            android:gravity="center"
+	            android:typeface="serif"
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"/>
+        	         	 
+        	         	 
+        	
+            
+        </LinearLayout>
+        
+
+        <LinearLayout 
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            
+            <TextView    
+	            android:text="优咯英语"
+	            android:textColor="@color/flat_gray"
+	            android:textSize="15dp"
+	            android:gravity="center"
+	            android:typeface="monospace"
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"/>
+            
+            <TextView    
+	            android:text="Version : 1.0.0430"
+	            android:textColor="@color/flat_gray"
+	            android:textSize="10dp"
+	            android:gravity="center"
+	            android:typeface="serif"
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"/>
+            
+             <TextView    
+	            android:text="Powered By Fantasy Team"
+	            android:textColor="@color/flat_gray"
+	            android:textSize="10dp"
+	            android:gravity="center"
+	            android:typeface="serif"
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"/>
+            
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

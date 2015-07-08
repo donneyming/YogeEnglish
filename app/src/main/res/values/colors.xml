@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="flat_yellow">#F39C12</color>
+	<color name="flat_yellow_light">#F1C40F</color>
+	
+	<color name="flat_new_green">#16A085</color>
+	<color name="flat_new_green_light">#1ABC9C</color>
+	
+	<color name="flat_green">#2ECC71</color>
+	<color name="flat_green_light">#27AE60</color>
+	
+	<color name="flat_red">#C0392B</color>
+	<color name="flat_red_light">#E74C3C</color>
+	
+	<color name="flat_blue">#3498DB</color>
+	<color name="flat_blue_light">#2980B9</color>
+	
+	<color name="flat_orange">#D35400</color>
+	<color name="flat_orange_light">#E67E22</color>    
+
+	<color name="flat_purple">#8E44AD</color>
+	<color name="flat_purple_light">#9B59B6</color>
+	
+	<color name="flat_midnight">#34495E</color>
+	<color name="flat_midnight_light">#34495E</color>  
+	
+	<color name="flat_gray">#7F8C8D</color>
+	<color name="flat_gray_light">#95A5A6</color>  
+
+	<color name="flat_silver">#BDC3C7</color>
+	<color name="flat_silver_light">#ECF0F1</color>  
+	
+	<!-- 在进阶部分用到的颜色 -->
+	<color name="flat_light_blue">#00C3D9</color>
+	<color name="flat_deep_green">#018985</color>
+	
+	<!-- 侧滑使用到的颜色 -->
+	<color name="sliding_menu_bottom_color">#38495A</color>
+	<color name="sliding_menu_color">#2C3E50</color>
+	
+	<!-- 个人中心用到的颜色 -->
+	<color name="personal_center_sliverblue">#F6F6F6</color>
+	
+	<!-- 设置中心用到的颜色 -->
+	<color name="setting_center_lightbrown">#F1F1F1</color>
+	
+	
+	<!-- 全局统一色彩 -->
+	<color name="theme_pink">#FC4050</color>
+	<color name="theme_white">#fff</color>
+	<color name="theme_red">#E74C3C</color>
+	<color name="theme_green">#2ECC71</color>
+	<color name="theme_blue">#3498DB</color>
+	<color name="theme_orange">#F39C12</color>
+	<color name="theme_blank">#000</color>
+	<color name="theme_gray">#FAF3F2</color>
+	<color name="theme_brown">#999999</color>
+	
+	<!-- 番茄土豆用到的颜色 -->
+	<color name="todolist_midnight">#3b4858</color>
+	
+	
+</resources>

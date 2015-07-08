@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/theme_red">
+        
+	    <ImageView
+	        android:layout_centerInParent="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="5dp"
+	        android:layout_width="30px"
+	        android:layout_height="30px"
+	        android:id="@+id/sliding_menu_actionbar_icon"
+	        android:layout_marginRight="-32dp"
+	        android:src="@mipmap/list_icon"/>
+	    
+	    <TextView
+	        android:id="@+id/setting_change_page_title"
+	        android:layout_centerInParent="true"
+	        android:layout_toRightOf="@id/sliding_menu_actionbar_icon"
+	        android:background="@color/theme_red"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:typeface="monospace"
+	        android:textColor="@color/theme_white"
+	        android:padding="6dp"
+	        android:textSize="18sp"
+	        android:text="土豆-自定义任务"/>
+	    
+	    <ImageView
+		        android:layout_centerInParent="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_margin="8dp"
+		        android:layout_width="32px"
+		        android:layout_height="32px"
+		        android:id="@+id/about_us_back"
+		        android:src="@mipmap/back"/>
+	</RelativeLayout>
+	
+<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="match_parent">
+	    
+        <ScrollView 
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+                <!-- 将阅读信息放在这里面 -->
+		    	<LinearLayout 
+		    	    android:padding="20dp"
+		    	    android:id="@+id/todolist_container"
+		    	    android:layout_width="match_parent"
+		    	    android:layout_height="match_parent"
+		    	    android:orientation="vertical"> 	   	
+		    	</LinearLayout>
+            
+         </ScrollView>
+	    
+
+	    
+	    
+	    <!-- 底部操作栏 -->
+	        
+	        <RelativeLayout 
+	            android:background="@color/todolist_midnight"
+	            android:layout_alignParentBottom="true"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp">
+	            
+	            <TextView 
+	                android:layout_centerInParent="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_width="55dp"
+	                android:id="@+id/todolist_add_position"
+	                android:layout_height="55dp"/>
+	            
+	            <ImageButton 
+	                android:layout_marginLeft="60dp"
+	                android:layout_toRightOf="@id/todolist_add_position"
+	                android:layout_centerVertical="true"
+	                android:background="@mipmap/todolist_setting_icon"
+	                android:layout_width="23dp"
+	                android:visibility="invisible"
+	                android:padding="20dp"
+	                android:layout_height="23dp"/>
+	            
+	            
+	            <ImageButton 
+	                android:padding="20dp"
+	                android:layout_marginRight="60dp"
+	                android:layout_toLeftOf="@id/todolist_add_position"
+	                android:layout_centerVertical="true"
+	                android:background="@mipmap/todolist_info_icon"
+	                android:layout_width="25dp"
+	                android:visibility="invisible"
+	                android:layout_height="25dp"/>
+	            
+	        </RelativeLayout>
+
+	        <ImageButton
+	            android:id="@+id/todolist_add"
+	            android:layout_centerHorizontal="true"
+	            android:background="@drawable/todolish_add_state"
+	            android:layout_width="52dp"
+	            android:layout_height="52dp"
+	            android:layout_marginBottom="3dp"
+	            android:layout_alignParentBottom="true"/>       
+	    
+	</RelativeLayout>
+	
+</LinearLayout>

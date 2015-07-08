@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+  
+<!-- 	<ImageView 
+   	    android:src="@mipmap/logo_en"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_gravity="left"
+   	    android:layout_margin="10sp"
+   	/> -->
+	<RelativeLayout
+	    android:onClick="toContent"
+	    android:id="@+id/jqm_4_numeral"
+	    android:contentDescription="数词 完成阅读"
+	    android:layout_marginTop="20dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginBottom="70dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/bg_radias"
+	    android:paddingLeft="1.5dp"
+	    android:paddingRight="1.5dp"
+	    android:paddingTop="15dp" >
+	    <TextView
+	        android:id="@+id/title4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="5dp"
+	        android:text="Numeral"
+	        android:textColor="#000"
+	        android:textSize="30sp"/>
+	    
+	    <TextView
+	        android:id="@+id/second_title4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@id/title4"
+	        android:layout_toRightOf="@id/title4"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:paddingRight="1.5dp"
+	        android:text="数数国王的脚步。"
+	        android:textColor="@color/flat_silver"
+	        android:typeface="monospace"
+	        android:textSize="15sp"/>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_below="@id/title4">
+		    <ImageView
+		        android:padding="0.5dp"
+		        android:id="@+id/img_title4"
+		        android:layout_width="fill_parent"
+		        android:layout_height="180dp"
+		        android:scaleType="fitXY"
+		        android:src="@mipmap/img_4_numeral"
+	        />
+		    <TextView
+		        android:layout_marginTop="8dp"
+		        android:typeface="monospace"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:textSize="15sp"
+		        android:lineSpacingExtra="5sp"
+		        android:textColor="@color/flat_midnight_light"
+		        android:text="表示数目多少或顺序多少的词叫数词，数词分为基数词和序数词。表示数目多少的数词叫基数词；表示顺序的数词叫序数词。"
+		        android:layout_height="wrap_content"
+		    	android:layout_width="fill_parent"
+	    	 />
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:paddingBottom="5dp"
+		        android:layout_gravity="center">
+		        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:typeface="monospace"
+		            android:textColor="@color/flat_gray"
+		            android:gravity="center"
+		            android:text="上次阅读：2014/03/11 07:35"/>
+		    </RelativeLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

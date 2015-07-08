@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yoge="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sliding_menu_color"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/theme_red">
+        
+	    <ImageView
+	        android:layout_centerInParent="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="5dp"
+	        android:layout_width="30px"
+	        android:layout_height="30px"
+	        android:id="@+id/sliding_menu_actionbar_icon"
+	        android:layout_marginRight="-32dp"
+	        android:src="@mipmap/list_icon"/>
+	    
+	    <TextView 
+	        android:layout_centerInParent="true"
+	        android:layout_toRightOf="@id/sliding_menu_actionbar_icon"
+	        android:background="@color/theme_red"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:typeface="monospace"
+	        android:textColor="@color/theme_white"
+	        android:padding="6dp"
+	        android:textSize="18sp"
+	        android:text="优咯英语"/>
+	    
+	    <TextView
+	        android:layout_centerInParent="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:padding="8dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="登录"
+	        android:drawableRight="@mipmap/go_white_icon_small"
+	        android:textColor="@color/theme_white"
+	        android:id="@+id/sliding_menu_register_login"/> 
+	    
+	</RelativeLayout>
+    
+
+    
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="5dp"
+	    android:padding="15dp"
+	    android:layout_gravity="left|center">
+    
+<!--     	<ImageView 
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerInParent="true"
+	        android:layout_width="64dp"
+	        android:layout_height="64dp"
+	        android:background="@mipmap/sliding_menu_radius"
+	        android:id="@+id/sliding_menu_header"     
+	        android:src="@mipmap/guest"/> -->
+    	
+    <me.loppis.ui.RoundedImageView
+    	    android:layout_alignParentLeft="true"
+	        android:layout_centerInParent="true"
+	        android:layout_width="64dp"
+	        android:layout_height="64dp"
+	        android:scaleType="centerCrop"
+	        yoge:border_thickness="2dp"
+      		yoge:border_color="@color/theme_white"
+	        android:id="@+id/sliding_menu_header"    
+	        android:src="@mipmap/guest"/>
+    	    
+    	
+    	
+		<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/sliding_menu_header"
+		    android:layout_centerInParent="true">
+		    
+		  <TextView 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:textSize="20sp"
+    	    android:layout_marginLeft="15dp"
+    	    android:text="Please Edit"
+    	    android:singleLine="true"
+    	    android:id="@+id/sliding_menu_username"
+    	    android:textColor="@color/theme_white"
+      		android:typeface="monospace"/>
+    	
+  		 <TextView 
+  		    android:id="@+id/sliding_menu_intro"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:textSize="13sp"
+    	    android:layout_marginLeft="16dp"
+    	    android:singleLine="true"
+    	    android:ellipsize="end"
+    	    android:textDirection="ltr"
+    	    android:text="Please Edit your proflie"
+    	    android:textColor="@color/theme_green"
+			android:layout_below="@id/sliding_menu_username"
+      		android:typeface="serif"/>
+		    
+		</RelativeLayout>
+    
+    </RelativeLayout>
+    
+	<ListView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="@color/sliding_menu_bottom_color"
+	    android:dividerHeight="1dp"
+	    android:id="@+id/sliding_layout_listview">
+	</ListView>
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="© 2014 Fantasy Team"
+	        android:textColor="@color/flat_silver"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dp"
+	        android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>

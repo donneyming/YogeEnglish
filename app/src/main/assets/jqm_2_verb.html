@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" >
+    <link rel="stylesheet" href="jquery.mobile.structure-1.4.2.min.css" >
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.mobile-1.4.2.min.js" ></script>
+    <style>
+    .custom-corners .ui-bar {
+      -webkit-border-top-left-radius: inherit;
+      border-top-left-radius: inherit;
+      -webkit-border-top-right-radius: inherit;
+      border-top-right-radius: inherit;
+    }
+    .custom-corners .ui-body {
+      border-top-width: 0;
+      -webkit-border-bottom-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+      -webkit-border-bottom-right-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
+	
+	#test{
+		outline:1px #333333 dashed ;
+	}
+	#test2{
+		outline:1px #666666 dashed ;
+	}
+  </style>
+</head>
+<body>
+    <div data-role="page">
+        
+        <div data-role="panel" id="leftpanel" data-theme="a" data-display="overlay" data-position="left"> 
+             <ui data-icon="false" data-divider-theme="a" data-theme="a" data-inset="false" data-role="listview">
+                <li class="ui-li-divider ui-bar-a ui-first-child" data-role="list-divider" role="heading">当前目录</li>
+                <li><a href="#begin" data-ajax="false">一、动词</a></li>
+                <li><a href="#begin_1_1" data-ajax="false">1.1 系动词</a></li>
+                <li><a href="#begin_1_2" data-ajax="false">1.2 助动词</a></li>
+            </ui>
+        </div><!-- /panel -->
+        
+        
+        <div data-role="header" data-position="fixed" >
+            <a id="header_change_section" href="#leftpanel">目录</a>
+            <h2>Verb 动词 </h2>
+            <a id="header_show_menu">PinBox</a>
+        </div>
+        <div data-role="content">
+            <div id="all" >
+                <h4 id=“begin”>一、动词</h4>
+                <p>表示动作中状态的词叫做动词。根据其在句中的功能，动词可分为四类，分别是：实义动词、系动词、助动词、情态动词。动词有五种形态，分别是：原形、第三人称单数形式、过去式、过去分词、现在分词。
+                </p>
+                <ul>
+                    <li>系动词：表示联系动词，如：fell。</li>
+                    <li>助动词：协助主要动词构成谓语动词的词叫助动词，如：doesn't</li>
+                    <li>短语动词：动词加小品构成的起动词作用的短语叫短语动词，如：turn off 关闭。</li>
+                    <li>非谓语动词：在句子中充当除谓语以外的句子成分的动词形式叫做非谓语动词。
+                    </li>
+                </ul>
+                <h4 id="begin_1_1">1.1 系动词</h4>
+                <p>
+					系动词亦称联系动词（Link Verb），作为系动词，它本身有词义，但不能单独用作谓语，后边必须跟表语（亦称补语），构成系表结构说明主语的状况、性质、特征等情况。
+                </p>
+                <div class="ui-corner-all custom-corners">
+                  <div class="ui-bar ui-bar-a">
+                    <h3>状态系动词</h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                    <p>用来表示主语状态，只有be一词。she is a teacher。</p>
+                  </div>
+                </div>
+                
+                <p></p>
+                
+                  <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <h3>持续系动词</h3>
+                      </div>
+                      <div class="ui-body ui-body-a">
+                        <p>用来表示主语继续或保持一种状况或态度（keep等）</p>
+                      </div>
+                </div>
+                
+                <p></p>
+                	<div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <h3>表象系动词</h3>
+                      </div>
+                      <div class="ui-body ui-body-a">
+                        <p>用来表示"看起来像"这一概念，主要有seem, appear, look。</p>
+                      </div>
+                </div>
+                
+                <p></p>
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <h3>感官系动词</h3>
+                      </div>
+                      <div class="ui-body ui-body-a">
+                        <p>感官系动词主要有feel, smell, sound, taste。 </p>
+                      </div>
+                </div>
+                
+                <p></p>
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <h3>变化系动词</h3>
+                      </div>
+                      <div class="ui-body ui-body-a">
+                        <p>这些系动词表示主语变成什么样，变化系动词主要有become, grow, turn, fall, get等</p>
+                      </div>
+                </div>
+                
+                <p></p>
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <h3>终止系动词</h3>
+                      </div>
+                      <div class="ui-body ui-body-a">
+                        <p>表示主语已终止动作，主要有prove, turn out, 表达"证实"，"变成"之意。</p>
+                      </div>
+                </div> 
+                
+                
+                <h4 id="begin_1_2">1.2 助动词</h4>
+                <p>
+					协助主要动词构成谓语动词的词叫助动词。被协助的动词称作主要动词。助动词自身没有词义，不可单独使用。例如：
+
+　　  He doesn't like English.　他不喜欢英语。
+                </p> 
+                <div class="ui-corner-all custom-corners">
+                      <div class="ui-bar ui-bar-a">
+                        <h3> 助动词协助主要动词完成以下功用</h3>
+                      </div>
+                      <div class="ui-body ui-body-a">
+                        <p> a. 表示时态。例如：　He is singing.　他在唱歌。</p>
+                        <p> b. 表示语态。例如：He was sent to England.　他被派往英国。</p>
+                        <p>  c. 构成疑问句。例如：　Do you like college life?　你喜欢大学生活吗？</p>
+                        <p> d. 与否定副词not合用，构成否定句。例如：I don't like him.　 我不喜欢他。</p>
+                        <p> e. 加强语气。例如：　Do come to the party tomorrow evening. 明天晚上一定来参加晚会。</p>
+                      </div>
+                </div>
+                <p>最常用的助动词有：be, have, do, shall, will, should, would等。</p> 
+                <p></p>         
+                
+            </div> <!--all end-->
+        </div><!--content end-->
+    </div>
+</body>
+</html>

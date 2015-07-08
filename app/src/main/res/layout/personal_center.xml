@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yoge="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    	<RelativeLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/theme_red">
+        
+		    <ImageView
+		        android:layout_centerInParent="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_margin="5dp"
+		        android:layout_width="32px"
+		        android:layout_height="32px"
+		        android:id="@+id/personal_center_actionbar_icon"
+		        android:layout_marginRight="-32dp"
+		        android:src="@mipmap/list_icon"/>
+	    
+		    <TextView 
+		        android:layout_centerInParent="true"
+		        android:layout_toRightOf="@id/personal_center_actionbar_icon"
+		        android:background="@color/theme_red"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:typeface="monospace"
+		        android:textColor="@color/theme_white"
+		        android:padding="6dp"
+		        android:textSize="18sp"
+		        android:text="个人中心"/>
+		    
+			<ImageView
+		        android:layout_centerInParent="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_margin="8dp"
+		        android:layout_width="32px"
+		        android:layout_height="32px"
+		        android:id="@+id/personal_center_back"
+		        android:src="@mipmap/back"/> 
+	</RelativeLayout>
+	
+   	<LinearLayout 
+   	    android:background="@color/theme_white"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:orientation="vertical">
+	    
+	   	<RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:background="@color/theme_red"
+	        android:layout_gravity="center"
+	        android:layout_height="wrap_content">
+	        
+	   	    <RelativeLayout 
+	   	        android:id="@+id/personal_center_top_inner"
+	   	        android:layout_centerHorizontal="true"
+		        android:layout_width="match_parent"
+		        android:paddingTop="15dp"
+		        android:layout_gravity="center"
+		        android:layout_height="wrap_content">
+		        
+		        <me.loppis.ui.RoundedImageView
+		            android:layout_centerHorizontal="true"
+			        android:layout_width="64dp"
+			        android:layout_height="64dp"
+			        android:scaleType="centerCrop"
+			        android:id="@+id/personal_center_header"
+			        android:layout_marginBottom="5dp"
+					yoge:border_thickness="2dp"
+      			  	yoge:border_color="@color/theme_white"
+			        android:src="@mipmap/guest"/>
+		        
+		        <TextView 
+		            android:gravity="center"
+		            android:textSize="20sp"
+		            android:typeface="serif"
+		            android:id="@+id/personal_center_name"
+		            android:textColor="@color/theme_white"
+		            android:layout_below="@id/personal_center_header"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Please Edit"/>
+		        
+		       <TextView 
+		           	android:layout_marginTop="3dp"
+		            android:gravity="center"
+		            android:textSize="12sp"
+		            android:typeface="serif"
+		            android:id="@+id/personal_center_intro"
+		            android:textColor="@color/theme_white"
+		            android:layout_below="@id/personal_center_name"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Nothing Here , Please edit ."/>
+		       
+		    	<TableLayout 
+		    	    android:layout_marginTop="15dp"
+		    	    android:layout_below="@id/personal_center_intro"
+		    	    android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content">
+		    	    
+		    	   	<TableRow
+		    	        android:layout_width="match_parent"
+		    	        android:layout_gravity="center_horizontal"
+		    	        android:gravity="center_horizontal"
+		    	        android:layout_height="wrap_content">
+		    	        
+		    	   	    <RelativeLayout 
+		    	   	        android:layout_width="wrap_content"
+		    	   	        android:layout_height="wrap_content">
+		    	   	       	<ImageView
+						        android:layout_margin="5dp"
+						        android:layout_width="28px"
+						        android:layout_height="28px"
+						        android:id="@+id/personal_center_histroy2"
+						        android:src="@mipmap/history"/>
+		    	   	        <TextView 
+		    	   	            android:layout_alignBottom="@id/personal_center_histroy2"
+		    	   	            android:layout_toRightOf="@id/personal_center_histroy2"
+					            android:gravity="center"
+					            android:textSize="15sp"
+					            android:typeface="serif"
+					            android:textColor="@color/theme_white"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="完成"/>
+		    	   	    </RelativeLayout>
+		    	   	    
+		    	   	    <RelativeLayout
+		    	   	        android:layout_marginLeft="30dp"
+		    	   	        android:layout_marginRight="30dp"
+		    	   	        android:layout_width="wrap_content"
+		    	   	        android:layout_height="wrap_content">
+		    	   	       	<ImageView
+						        android:layout_margin="5dp"
+						        android:layout_width="28px"
+						        android:layout_height="28px"
+						        android:id="@+id/personal_center_histroy3"
+						        android:src="@mipmap/todo_icon"/>
+		    	   	        <TextView 
+		    	   	            android:layout_alignBottom="@id/personal_center_histroy3"
+		    	   	            android:layout_toRightOf="@id/personal_center_histroy3"
+					            android:gravity="center"
+					            android:textSize="15sp"
+					            android:typeface="serif"
+					            android:textColor="@color/theme_white"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="土豆"/>
+		    	   	    </RelativeLayout>
+		    	   	    
+		    	   	    <RelativeLayout 
+		    	   	        android:layout_width="wrap_content"
+		    	   	        android:layout_height="wrap_content">
+		    	   	       	<ImageView
+						        android:layout_margin="5dp"
+						        android:layout_width="28px"
+						        android:layout_height="28px"
+						        android:id="@+id/personal_center_histroy"
+						        android:src="@mipmap/chart_icon_small"/>
+		    	   	        <TextView 
+		    	   	            android:layout_alignBottom="@id/personal_center_histroy"
+		    	   	            android:layout_toRightOf="@id/personal_center_histroy"
+					            android:gravity="center"
+					            android:textSize="15sp"
+					            android:typeface="serif"
+					            android:textColor="@color/theme_white"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="统计"/>
+		    	   	    </RelativeLayout> 
+		    	    </TableRow>
+	    	      
+		    	</TableLayout>   	        
+		    </RelativeLayout>
+		    <TableLayout
+		        android:layout_marginBottom="-5dp"
+		        android:layout_below="@id/personal_center_top_inner"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent">
+		    	
+		        		<TableRow
+		        		    android:paddingLeft="5dp"
+		        		    android:paddingRight="5dp"
+		        		    android:layout_marginBottom="-6dp"
+			    	        android:layout_width="match_parent"
+			    	        android:layout_gravity="center_horizontal"
+			    	        android:gravity="center_horizontal"
+			    	        android:layout_height="wrap_content">
+		    	   	    
+			    	        <ImageView 
+			    	            android:layout_weight="1"
+			    	            android:id="@+id/personal_center_icon0"
+			    	            android:src="@mipmap/top_icon_samll"
+			    	            android:layout_width="wrap_content"
+			    	            android:layout_height="wrap_content"/>
+			    	        
+			    	        <ImageView 
+			    	            android:id="@+id/personal_center_icon1"
+			    	            android:visibility="invisible"
+			    	            android:layout_weight="1"
+			    	            android:src="@mipmap/top_icon_samll"
+			    	            android:layout_width="wrap_content"
+			    	            android:layout_height="wrap_content"/>
+			    	        
+			    	        <ImageView 
+			    	            android:id="@+id/personal_center_icon2"
+			    	            android:visibility="invisible"
+			    	            android:layout_weight="1"
+			    	            android:src="@mipmap/top_icon_samll"
+			    	            android:layout_width="wrap_content"
+			    	            android:layout_height="wrap_content"/>
+		    	        
+						</TableRow>	
+		        
+		    </TableLayout>
+		</RelativeLayout>
+		
+
+	   	
+	  	<android.support.v4.view.ViewPager
+	   	    android:id="@+id/personal_center_viewpager"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="match_parent"
+	   	    android:layout_gravity="center"> 
+   		</android.support.v4.view.ViewPager>
+	   	
+	   	
+	</LinearLayout>
+</LinearLayout>

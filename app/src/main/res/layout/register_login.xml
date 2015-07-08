@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_gray"
+    android:orientation="vertical" >
+    
+    	<RelativeLayout 
+		    android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:background="@color/theme_red">
+        
+	    <ImageView
+	        android:layout_centerInParent="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="5dp"
+	        android:layout_width="30px"
+	        android:layout_height="30px"
+	        android:id="@+id/sliding_menu_actionbar_icon"
+	        android:layout_marginRight="-32dp"
+	        android:src="@mipmap/list_icon"/>
+	    
+	    <TextView
+	        android:id="@+id/setting_change_page_title"
+	        android:layout_centerInParent="true"
+	        android:layout_toRightOf="@id/sliding_menu_actionbar_icon"
+	        android:background="@color/theme_red"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:typeface="monospace"
+	        android:textColor="@color/theme_white"
+	        android:padding="6dp"
+	        android:textSize="18sp"
+	        android:text="用户登录"/>
+	    
+	    <ImageView
+		        android:layout_centerInParent="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_margin="8dp"
+		        android:layout_width="32px"
+		        android:layout_height="32px"
+		        android:id="@+id/about_us_back"
+		        android:src="@mipmap/back"/>
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:padding="20dp"
+	    android:layout_height="match_parent">
+	    
+	   	<TextView 
+	   	    android:layout_marginBottom="10dp"
+	   	    android:typeface="monospace"
+	   	    android:textSize="15sp"
+	   	    android:textColor="@color/flat_midnight"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="用户名称："/>
+	   	
+        <EditText
+            android:textColor="@color/flat_midnight"
+            android:typeface="monospace"
+            android:textSize="15sp"
+            android:id="@+id/register_login_username"
+            android:lines="2"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        
+        <TextView 
+	   	    android:layout_marginBottom="10dp"
+	   	    android:typeface="monospace"
+	   	    android:textSize="15sp"
+	   	    android:textColor="@color/flat_midnight"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="用户密码："/>
+	   	
+        <EditText
+            android:textColor="@color/flat_midnight"
+            android:typeface="monospace"
+            android:password="true"
+            android:textSize="15sp"
+            android:id="@+id/register_login_password"
+            android:lines="2"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        
+        
+         <Button 
+           	android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/theme_white"
+            android:typeface="monospace"
+            android:gravity="center"
+            android:background="@drawable/setting_change_page_btn"
+            android:textSize="15sp"
+            android:id="@+id/register_login_submit"
+            android:text="登录"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+         
+         <Button 
+           	android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/theme_white"
+            android:typeface="monospace"
+            android:gravity="center"
+            android:background="@drawable/todolist_card_edit"
+            android:textSize="15sp"
+            android:id="@+id/todolist_card_delete"
+            android:text="删除"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+	    
+	</LinearLayout>
+	
+    
+    
+    
+
+</LinearLayout>

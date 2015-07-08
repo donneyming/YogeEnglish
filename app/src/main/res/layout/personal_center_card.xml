@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    	   	    <!-- 每一条阅读信息的单元 -->
+	   	   	<RelativeLayout 
+	   	   	    android:layout_marginBottom="8dp"
+	   	   	    android:layout_gravity="center"
+	   	   	    android:background="@color/personal_center_sliverblue"
+	   	   	    android:layout_width="match_parent"
+	   	   	    android:layout_height="60dp">
+		    	
+	   	   	    <TextView 
+	   	   	        android:layout_alignParentLeft="true"
+	   	   	        android:layout_height="match_parent"
+	   	   	        android:layout_width="5dp"
+	   	   	        android:background="@color/theme_red"/>
+		    	
+	   	   	    <ImageView 
+	   	   	        android:layout_centerInParent="true"
+	   	   	        android:layout_alignParentRight="true"
+	   	   	        android:src="@mipmap/ok_line"
+	   	   	        android:paddingRight="10dp"
+	   	   	        android:layout_width="wrap_content"
+	   	   	        android:layout_height="wrap_content"/>
+		    	
+	   	   	    <LinearLayout 
+	   	   	        android:paddingLeft="10dp"
+	   	   	        android:layout_centerInParent="true"
+	   	   	        android:orientation="vertical"
+	   	   	        android:layout_width="match_parent"
+	   	   	        android:layout_height="wrap_content">
+		    	   	
+		   	   	    <TextView 
+		   	   	        android:paddingLeft="12dp"
+		   	   	        android:drawableLeft="@mipmap/location_icon_small"
+		   	   	        android:textColor="@color/sliding_menu_color"
+		   	   	        android:textSize="15sp"
+		   	   	        android:id="@+id/personal_center_card_title"
+		   	   	        android:text=" 名词 完成阅读"
+		   	   	        android:typeface="monospace"
+		   	   	        android:layout_width="match_parent"
+		   	   	        android:layout_height="wrap_content"/>
+		   	   	    
+		   	   	    <TextView
+		   	   	        android:drawableLeft="@mipmap/select_icon_small"
+		   	   	        android:layout_marginTop="3dp"
+		   	   	        android:textColor="@color/theme_blue"
+		   	   	        android:paddingLeft="15dp"
+		   	   	        android:id="@+id/personal_center_card_timeshow"
+		   	   	        android:text=" 2014/04/29 09:52"
+		   	   	        android:typeface="monospace"
+		   	   	        android:layout_width="match_parent"
+		   	   	        android:layout_height="wrap_content"/>	
+		   	   	        
+	   	   	    </LinearLayout>  
+	   	   	    
+	   	   	</RelativeLayout>
+    
+
+</LinearLayout>

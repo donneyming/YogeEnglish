@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    font-family:"Microsoft YaHei UI", "幼圆", "Century Gothic",sans-serif;
+}
+.intro_block:nth-of-type(1) {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #F0793F;
+}
+
+.intro_block:nth-of-type(2) {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #2DBAA6;
+}
+
+#tip {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.midnight{
+    color: #34495E;
+}

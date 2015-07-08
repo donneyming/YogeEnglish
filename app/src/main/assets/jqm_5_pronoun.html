@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pronoun</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" >
+    <link rel="stylesheet" href="jquery.mobile.structure-1.4.2.min.css" >
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.mobile-1.4.2.min.js" ></script>
+    <style>
+    .custom-corners .ui-bar {
+      -webkit-border-top-left-radius: inherit;
+      border-top-left-radius: inherit;
+      -webkit-border-top-right-radius: inherit;
+      border-top-right-radius: inherit;
+    }
+    .custom-corners .ui-body {
+      border-top-width: 0;
+      -webkit-border-bottom-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+      -webkit-border-bottom-right-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
+	
+	#test{
+		outline:1px #333333 dashed ;
+	}
+	#test2{
+		outline:1px #666666 dashed ;
+	}
+  </style>
+</head>
+<body>
+    <div data-role="page">
+        
+        <div data-role="panel" id="leftpanel" data-theme="a" data-display="overlay" data-position="left"> 
+             <ui data-icon="false" data-divider-theme="a" data-theme="a" data-inset="false" data-role="listview">
+                <li class="ui-li-divider ui-bar-a ui-first-child" data-role="list-divider" role="heading">当前目录</li>
+                <li><a href="#begin" data-ajax="false">一、代词</a></li>
+                <li><a href="#begin_1_1" data-ajax="false">1.1 人称代词</a></li>
+                <li><a href="#begin_1_2" data-ajax="false">1.2 物主代词</a></li>
+                <li><a href="#begin_1_3" data-ajax="false">1.3 指示代词</a></li>
+                <li><a href="#begin_1_4" data-ajax="false">1.4 反身代词</a></li>
+                <li><a href="#begin_1_5" data-ajax="false">1.5 相互代词</a></li>
+                
+                <li><a href="#begin_1_6" data-ajax="false">1.6 疑问代词</a></li>
+                <li><a href="#begin_1_7" data-ajax="false">1.7 关系代词</a></li>
+            </ui>
+        </div><!-- /panel -->
+        
+        
+        <div data-role="header" data-position="fixed" >
+            <a id="header_change_section" href="#leftpanel">目录</a>
+            <h2>Pronoun 代词</h2>
+            <a id="header_show_menu">PinBox</a>
+        </div>
+        <div data-role="content">
+            <div id="all" >
+                <h4 id=“begin”>一、代词</h4>
+                <p>代词是代替名词的词类。大多数代词具有名词和形容词的功能。英语中的代词，按其意义、特征及在句中的作用分为：人称代词、物主代词、指示代词、自身代词、相互代词、疑问代词、关系代词和不定代词八种。
+                </p>
+                
+                <h4 id="begin_1_1">1.1 人称代词</h4>
+                <p>
+					人称代词是表示"我"、"你"、"他"、"她"、"它"、"我们"、"你们"、"他们"的词。人称代词有人称、数和格的变化。
+                </p>
+                <div class="ui-corner-all custom-corners">
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.1.1人称代词的用法</h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                    <ul>
+                    	<li>人称代词的主格在句子中作主语或主语补语。例如：John waited a while but eventually he went home. 约翰等了一会儿，最后他回家了。
+                        <p>说明：在复合句中，如果主句和从句主语相同，代词主语要用在从句中，名词主语用在主句中。例如：When he arrived, John went straight to the bank. 约翰一到就直接去银行</p>
+                        </li>
+                        <li>人称代词的宾格在句子中作宾语或介词宾语，但在口语中也能作主语补语，第一人称在省略句中，还可以作主语。例如：I saw her with them, at least, I thought it was her. 我看到她和他们在一起，至少我认为是她。（her做宾语，them做介词宾语，her做主语补语）</li>
+                    </ul>
+                  </div>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.1.2人称代词之主、宾格的替换 </h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                    <ul>宾格代替主格
+                    	<li>a.在简短对话中，当人称代词单独使用或在not 后，多用宾语。---- I like English.--我喜欢英语。</li>
+                        <li>b.在表示比较的非正式的文体中，常用宾格代替主格。 但如果比较状语的谓语保留，则主语只能用主格。He is taller than I/me.</li>
+                    </ul>
+                    <ul>
+                   		主格代替宾格
+                    	<li>a. 在介词but，except 后，有时可用主格代替宾格。</li>
+                        <li>b. 在电话用语中常用主格.---- I wish to speak to Mary.   --我想和玛丽通话。</li>
+                        <p>注意：在动词be 或to be 后的人称代词视其前面的名词或代词而定。I thought it was she.　　 我以为是她。（主格----主格）</p>
+                    </ul>
+                  </div>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.1.3代词的指代问题  </h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                    <ul>
+                    	<li>不定代词 anybody，everybody，nobody，anyone， someone， everyone，no one， 及whoever和person在正式场合使用时，可用he, his, him代替。例如： Nobody came, did he?　谁也没来，是吗?</li>
+                        <li>动物名词的指代一般用it或they代替，有时也用he, she，带有亲切的感情色彩。例如： Give the cat some food. She is hungry.　给这猫一些吃的。她饿了.</li>
+                        <li>指代车或国家，船舶的名词，含感情色彩时常用she</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.1.4并列人称代词的排列顺序  </h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                    <ul>
+                    	<li>单数人称代词并列作主语时，其顺序为：第二人称－> 第三人称 －> 第一人称，即you－> he/she; it -> I。例如：You, he and I should return on time.</li>
+                        <li>复数人称代词作主语时，其顺序为：第一人称 －> 第二人称 －> 第三人称，即we　－>you－>they。
+                        <h4>注意： 在下列情况中，第一人称放在前面。</h4>
+                        <ul>
+                        	<li>a. 在承认错误，承担责任时，It was I and John that made her angry. 是我和约翰惹她生气了。</li>
+                            <li>b. 在长辈对晚辈，长官对下属说话时，如长官为第一人称，如：I and you try to finish it. 我和你去弄好它</li>
+                            <li>c. 并列主语只有第一人称和第三人称时。</li>
+                            <li>d. 当其他人称代词或名词被定语从句修饰时。</li>
+                        </ul>
+                        </li>
+                    
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+                <p></p>
+                <h4 id="begin_1_2">1.2 物主代词</h4>
+                <div class="ui-bar ui-bar-a">
+                    <h3>1.2.1物主代词既有表示所属的作用又有指代作用  </h3>
+                </div>
+                 <div class="ui-body ui-body-a">
+                    <ul>物主代词既有表示所属的作用又有指代作用。例如：
+John had cut his finger; apparently there was a broken glass on his desk.
+					</ul>
+                    <h5>物主代词有形容词性（my, your等）和名词性（mine, yours等）两种，形容词性的物主代词属于限定词。名词性的物主代词在用法上相当于省略了中心名词的--'s属格结构。例如：Jack's cap　  意为The cap is Jack's。    His cap　　  意为The cap is his。</h5>
+                  </div>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.2.2名词性物主代词的句法功能</h3>
+                </div>
+                 <div class="ui-body ui-body-a">
+                    <ul>
+                    	<li>a. 作主语。例如：
+
+　　　May I use your pen? Yours works better. 我可以用一用你的钢笔吗？你的比我的好用。
+
+</li>
+                        <li>b. 作宾语。例如：
+
+　　　I love my motherland as much as you love yours. 我深爱我的祖国就像你深爱你的祖国一样。
+</li>
+                        <li>c. 作介词宾语。例如：
+
+Your should interpret what I said in my sense of the word, not in yours. 
+
+你应当按我所用的词义去解释我说的话，而不能按你自己的去解释。
+</li>
+                        <li>d. 作主语补语。例如：
+
+　　　The life I have is yours. It's yours. It's yours.　我的生命属于你，属于你，属于你。
+
+</li>
+                       
+					</ul>
+                    
+                  </div>
+                  <h4 id="begin_1_3">1.3 指示代词</h4>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.3.1指示代词  </h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                  <ul>
+                  	指示代词分单数（this / that）和复数（these / those）两种形式，既可作限定词又可做代词。
+                  </ul>
+                  </div>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.3.2指示代词的句法功能</h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                  <ul>
+                  	<li>a. 作主语。例如：
+
+　　　 This is the way to do it.　　　 这事儿就该这样做。
+
+</li>
+					<li>b. 作宾语。例如：
+
+　　　 I like this better than that.　　 我喜欢这个甚至那个。
+</li>
+                    <li>c. 作主语补语。例如：
+
+　　　 My point is this.　　　       我的观点就是如此
+</li>
+                    <li>d. 作介词宾语。例如：
+　　　 I don't say no to that.　　　   我并未拒绝那个。<br/>
+　　　 There is no fear of that.　　　 那并不可怕。
+
+</li>
+                    
+                  </ul>
+                  </div>
+                   <h4 id="begin_1_4">1.4 反身代词</h4>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.4.1 列表 </h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                  	第一二三人称
+                  </div><p>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.4.2 做宾语 </h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                  	<ul>
+                    	<li>a. 有些动词需有反身代词，如absent, bathe, amuse, blame, dry, cut, enjoy, hurt, introduce, behave等。例如：
+
+　　　We enjoyed ourselves very much last night.　我们昨晚玩得很开心。
+</li>
+						<li> b. 用于及物动词+宾语+介词，如take pride in, be annoyed with, help oneself to sth等。例如：
+
+I could not dress（myself）up at that time.　那个时候我不能打扮我自己。
+
+</li>
+                        <li> 用作表语，如结构be oneself。例如：
+
+I am not myself today.　 我今天不舒服。
+
+</li>
+                        <li>用作同位语
+
+　　　The thing itself is not important.　　事情本身并不重要。
+
+</li>
+                        <li>
+                        	<ul>在不强调的情况下，but, except, for 等介词后宾语用反身代词或人称代词宾格均可。如：No one but myself（me）is hurt.
+
+注意： 
+
+							<li>a. 反身代词本身不能单独作主语。
+
+　　　（错） Myself drove the car.
+
+　　　（对） I myself drove the car.　我自己开车。
+</li>
+                            <li>b. 但在and, or, nor连接的并列主语中，第二个主语可用反身代词，特别是myself 作主语。例如：
+
+Charles and myself saw it. 查尔斯和我看见了这件事。
+
+</li>
+</ul>
+                        </li>
+                        
+                    </ul>
+                  </div><p>
+                  
+                  <h4 id="begin_1_5">1.5 相互代词</h4>
+                  <div class="ui-bar ui-bar-a">
+                    <h3>1.5.1  相互代词的句法功能：</h3>
+                  </div>
+                  <div class="ui-body ui-body-a">
+                  	<ul>
+                    	<li>a. 作动词宾语；
+
+　　　  People should love one another. 人们应当彼此相爱。
+</li>
+                        <li>b. 可作介词宾语；
+
+　　　  Does bark, cocks crow, frogs croak to each other.　 吠、鸡鸣、蛙儿对唱。
+
+</li>
+						<li>c. 相互代词可加-'s构成所有格。例如：
+
+　　　  The students borrowed each other's notes. 学生们互借笔记。
+</li>
+                    </ul>
+                 </div>
+                
+                <h4 id="begin_1_6">1.6 疑问代词</h4>
+                  <div class="ui-body ui-body-a">
+                  	<ul>
+                    	<li>疑问代词在句中起名词词组的作用，用来构成疑问句。疑问代词有下列几个：
+
+　　  指人： who, whom, whose
+
+　　  指物： what
+
+　　  既可指人又可指物： which
+
+
+</li>
+                        <li>既可指人又可指物： which
+
+　2） 疑问代词在句中应位于谓语动词之前，没有性和数的变化，除who之外也没有格的变化。what, which, whose还可作限定词。试比较：
+
+　    疑问代词：Whose are these books on the desk?　 　桌上的书是谁的？
+
+
+
+</li>
+						
+                    </ul>
+                 </div>
+                 
+                 <h4 id="begin_1_7">1.7 关系代词</h4>
+                  <div class="ui-body ui-body-a">
+                  	<ul>关系代词用来引导定语从句。它代表先行词，同时在从句中作一定的句子成分。例如：
+
+The girl to whom I spoke is my cousin.　跟我讲话的姑娘是我表妹。
+
+该句中whom既代表先行词the girl，又在从句中作介词to的宾语。
+
+
+</li>
+                        <li>关系代词有主格，宾格和属格之分，并有指人与指物之分。在限定性定语从句中，that 可指人也可指物
+                        <br/>
+                        例如：This is the pencil whose point is broken. 这就是那枝折了尖的铅笔。（whose 指物，在限定性定语从句中作定语）
+
+　　　  He came back for the book which he had forgotten.　他回来取他丢下的书。（which指物，在限定性定语从句中作宾语，可以省略）
+
+说明：非限定性定语从句中，不能用that作关系代词。
+
+
+</li>
+					<li>
+                    	　3） 关系代词which的先行词可以是一个句子。例如：
+
+　　  He said he saw me there, which was a lie. 他说在那儿看到了我，纯属谎言。
+
+　　　说明： 关系代词在从句中作宾语时可以省略。另外，关系代词that在从句中作表语时也可省略，例如：
+
+　    I've forgotten much of the Latin I once knew.　 我过去懂拉丁语，现在大都忘了。<br/>
+
+　　　He's changed. He's not the man he was. 他变化很大，已不是过去的他了。
+
+                    </li>
+						
+                    </ul>
+                 </div>
+            </div> <!--all end-->
+        </div><!--content end-->
+    </div>
+</body>
+</html>
